@@ -1,5 +1,6 @@
 import { useState } from "react";
 import data from "./MovieData.json";
+import TopBanner from "./layout";
 const mds = data.MovieData;
 function MovieList() {
   const [listOfMovies] = useState(mds);
@@ -23,7 +24,7 @@ function MovieList() {
   return (
     <>
       <div>
-        <h3>Joel Hilton Movie Collection</h3>
+        <TopBanner />
       </div>
       <div>
         <table className="table">
